@@ -2,7 +2,9 @@ import React from 'react';
 import mobile from '../../../images/mobile.jpg';
 import laptop from '../../../images/laptop.jpg';
 import tv from '../../../images/tv.jpg';
-const Cart = ({cart}) => {
+const Cart = (props) => {
+  const {cart}=props;
+  
   let total=0;
   let shipping=0;
   let quantity=0;
@@ -67,6 +69,7 @@ const Cart = ({cart}) => {
                     <p>Total Shipping Charge:<span className='fs-6 fw-bold'>${shipping}</span></p>
                     <p>Tax:<span className='fs-6 fw-bold'> ${tax.toFixed(2)}</span></p>
                     <p>Grand Total:<span className='fs-5 fw-bold'>${grandTotal}</span> </p>
+                    {props.children}
                     </div>
                     </div>
                    

@@ -7,8 +7,8 @@ const Product = ({product,handleAddToCart}) => {
     return (
         <div className='col-lg-4 mt-4 '>
             <div className='border m-1 '>
-           <div className='h-75 w-100'>
-           <img className=' img-thumbnail rounded ' src={picture} alt="" />
+           <div className=' w-100 '>
+           <img className='h-50 img-thumbnail rounded ' src={picture} alt="" />
            </div>
          <p>Name:{name}</p>
          <div>

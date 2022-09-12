@@ -1,32 +1,18 @@
+import { faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import useCart from '../../hooks/useCart';
+import useProducts from '../../hooks/useProducts';
 import { addToDb, getStoredCart } from '../../utilities/fakedb';
 import Cart from './Cart/Cart';
 import Product from './Products/Product';
 import './Shop.css'
 const Shop = () => {
-    const [product,setProduct]=useState([]);
-    const [cart,setCart]=useState([]);
-    useEffect(()=>{
-        fetch('products.json')
-        .then(res =>res.json())
-        .then(data =>setProduct(data))
-    },[]);
-   
-    useEffect(()=>{
-        const storedCart=getStoredCart();
-        const savedCart=[];
-        for(const id in storedCart){
-           const addedProduct=product.find(product=>product.id===id);
-           if(addedProduct){
-            const quantity=storedCart[id];
-            addedProduct.quantity=quantity;
-            savedCart.push(addedProduct)
-            console.log(addedProduct)
-           }
-        }
-        setCart(savedCart);
-    },[product]);
-
+    //Use Custom Hooks
+    const [products,setProducts]=useProducts();
+    const [cart,setCart]=useCart(products);
+ 
     const handleAddToCart=(product)=>{
        let newCart=[]
         const exist=cart.find(product=>product.id===product);
@@ -45,11 +31,13 @@ const Shop = () => {
     }
     return (
         <div> 
-            <Cart cart={cart}></Cart>
+            <Cart cart={cart}>
+                <Link to='/orders'><button className='border-0 bg-primary rounded fw-bold text-white'>Review Items <FontAwesomeIcon icon={faArrowAltCircleRight}></FontAwesomeIcon></button></Link>
+            </Cart>
         <div className="container">
         <div className='row'> 
                         {
-                product.map(product=><Product 
+                products.map(product=><Product 
                     key={product.id} 
                     product={product}
                     handleAddToCart={handleAddToCart}></Product>)

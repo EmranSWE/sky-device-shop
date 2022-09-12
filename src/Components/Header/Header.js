@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import logo from '../../logo.svg';
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -74,22 +75,13 @@ const Header = () => {
             <li><a className="dropdown-item" href="#television">Television</a></li>
           </ul>
         </li>
-        <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#home">Home</a>
+        <li className="nav-item fs-2 ">
+          <Link className='text-decoration-none text-light mx-4' to='/home'>Home</Link>
+          <Link className='text-decoration-none text-light me-4' to='/orders'>Orders</Link>
+          <Link  className='text-decoration-none text-light me-4' to='/inventory'>Inventory</Link>
+          <Link className='text-decoration-none text-light me-4' to='/about'>About</Link>
         </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#about-us">About Us</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#bestseller">Best Seller Product</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#new-product">New Product</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#contact-us">Contact Us</a>
-        </li>
-        
+
       </ul>
     </div>
   </div>
