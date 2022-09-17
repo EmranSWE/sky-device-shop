@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { Button, Col, Form, InputGroup, Row } from 'react-bootstrap';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 const SignUp = () => {
     const [validated, setValidated] = useState(false);
@@ -10,8 +10,13 @@ const SignUp = () => {
     const [password,setPassword]=useState('');
     const [confirmPassword,setConfirmPassword]=useState('');
     const [error,setError]=useState('');
-    const [ createUserWithEmailAndPassword] = useCreateUserWithEmailAndPassword(auth);
-    
+    const [ createUserWithEmailAndPassword,user] = useCreateUserWithEmailAndPassword(auth);
+    const navigate=useNavigate();
+
+    if(user){
+        navigate('/home');
+    }
+
     const handleEmailChange=(event) =>{
         setEmail(event.target.value)
     }

@@ -1,11 +1,17 @@
 import { faClock, faMoneyBill, faPhone, faSearch, faTruck } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import logo from '../../logo.svg';
-
+import { useAuthState } from 'react-firebase-hooks/auth';
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import auth from '../../firebase.init';
+import {  signOut } from 'firebase/auth';
 const Header = () => {
+    const [user] = useAuthState(auth);
+
+    const handleSignOut =() =>{
+            signOut(auth);
+    }
     return (
         <div >
             {/* Header Feature */}
@@ -80,8 +86,8 @@ const Header = () => {
           <Link className='text-decoration-none text-light me-4' to='/orders'>Orders</Link>
           <Link  className='text-decoration-none text-light me-4' to='/inventory'>Inventory</Link>
           <Link className='text-decoration-none text-light me-4' to='/about'>About</Link>
-          <Link className='text-decoration-none text-light me-4' to='/signup'>Sign Up</Link>
-          <Link className='text-decoration-none text-light me-4' to='/login'>Login</Link>
+      {/*     <Link className='text-decoration-none text-light me-4' to='/signup'>Sign Up</Link> */}
+          {user ? <button className='fs-5' onClick={handleSignOut}>Sign Out</button>:<Link className='text-decoration-none text-light me-4' to='/login'>Login</Link>}
         </li>
 
       </ul>
