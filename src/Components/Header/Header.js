@@ -80,6 +80,8 @@ const Header = () => {
           <Link className='text-decoration-none text-light me-4' to='/orders'>Orders</Link>
           <Link  className='text-decoration-none text-light me-4' to='/inventory'>Inventory</Link>
           <Link className='text-decoration-none text-light me-4' to='/about'>About</Link>
+          <Link className='text-decoration-none text-light me-4' to='/signup'>Sign Up</Link>
+          <Link className='text-decoration-none text-light me-4' to='/login'>Login</Link>
         </li>
 
       </ul>
