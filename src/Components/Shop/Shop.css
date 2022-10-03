@@ -3,3 +3,13 @@
     grid-template-columns: repeat(4,1fr);
     border: 2px solid red;
 }
+.pagination button{
+    margin-right: 10px;
+    background-color: white;
+    border: 1px solid orange;
+}
+.pagination .selected{
+ 
+    background-color:orange;
+    color: white;
+}
