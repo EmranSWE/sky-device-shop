@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import { Button, Col, Form, InputGroup, Row } from 'react-bootstrap';
+import { Button, Col, Form, Row } from 'react-bootstrap';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
@@ -12,6 +12,7 @@ const SignUp = () => {
     const [error,setError]=useState('');
     const [ createUserWithEmailAndPassword,user] = useCreateUserWithEmailAndPassword(auth);
     const navigate=useNavigate();
+    console.log(email,password)
 
     if(user){
         navigate('/home');
@@ -29,6 +30,7 @@ const SignUp = () => {
 
   const handleCreateUser = event =>{
     const form = event.currentTarget;
+    console.log(form)
     event.preventDefault();
     if (form.checkValidity() === false) {
         event.stopPropagation();
@@ -73,16 +75,7 @@ const SignUp = () => {
             Please provide a valid Confirm Password.
           </Form.Control.Feedback>
         </Form.Group>
-
       </Row>
-     {/*  <Form.Group className="mb-3">
-        <Form.Check
-          required
-          label="Agree to terms and conditions"
-          feedback="You must agree before submitting."
-          feedbackType="invalid"
-        />
-      </Form.Group> */}
       <p className='text-danger'>{error}</p>
       <Button  type="submit">Sign Up</Button>
       <p className='text-warning'>Already Have an Account? <Link to='/login'>Login</Link></p>

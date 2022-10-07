@@ -9,9 +9,8 @@ const useCart=() =>{
         const storedCart=getStoredCart();
         const keys =Object.keys(storedCart)
         const savedCart=[];
-        console.log(keys);
 
-        fetch('http://localhost:5000/productByKeys',{
+        fetch('https://peaceful-sands-05755.herokuapp.com/productByKeys',{
             method:"POST",
             headers:{
                 'content-type':'application/json'
@@ -20,7 +19,7 @@ const useCart=() =>{
         })
         .then(res =>res.json())
         .then(products => {
-            console.log(products);
+            
             for(const id in storedCart){
             const addedProduct=products.find(product =>product._id===id )
             if(addedProduct){
