@@ -10,7 +10,7 @@ const useCart=() =>{
         const keys =Object.keys(storedCart)
         const savedCart=[];
 
-        fetch('https://peaceful-sands-05755.herokuapp.com/productByKeys',{
+        fetch('https://sea-turtle-app-yah4l.ondigitalocean.app/productByKeys',{
             method:"POST",
             headers:{
                 'content-type':'application/json'

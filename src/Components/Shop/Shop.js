@@ -17,13 +17,13 @@ const Shop = () => {
     const [cart,setCart]=useCart(products);
 
     useEffect(()=>{
-        fetch(`https://peaceful-sands-05755.herokuapp.com/product?page=${page}&size=${size}`)
+        fetch(`https://sea-turtle-app-yah4l.ondigitalocean.app/product?page=${page}&size=${size}`)
         .then(res =>res.json())
         .then(data => setProducts(data))
     },[page,size]);
 
     useEffect(()=>{
-        fetch('https://peaceful-sands-05755.herokuapp.com/productCount')
+        fetch('https://sea-turtle-app-yah4l.ondigitalocean.app/productCount')
         .then(res => res.json())
         .then(data => {
             const count =data.count;
