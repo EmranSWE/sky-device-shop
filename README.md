@@ -1,70 +1,96 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#  🏆 Sky Device Shop 🏆
 
-## Available Scripts
+Sky Device Shop is JavaScript React Functional Website. A user can add to cart a product, review a product, and shipment a product
+[![Welcom To EM GIMBAL](https://img.shields.io/badge/Wecome-Sky:DeviceShop-brightgreen.svg?style=flat-square)](https://sky-device-shop.web.app/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Demo
+Sky Device Shop:-
+[Live Demo](https://sky-device-shop.web.app/)
 
-### `npm run build`
+## Technology Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Technology | Description                               |
+|------------|-------------------------------------------|
+| Front-End    | HTML5, CSS3, Bootstrap ,JavaScript ,React, ReactRouter|   
+| Back-End    | NodeJs, ExpressJs, MongoDb,cors, dotenv|
+| Tools |imgbb, Firebase, Heroku, Git |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Feature of EM Gimbal Website
+#### Sky Device Shop is a e-commarce functionality website.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+#### What Customer can Do:
+- A user can add to cart a items.
+- Can review items and Remove from review
+- Can proceed to shipment a items. 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Screenshot of the application (Demo)
+### Desktop / Laptop
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Home
+![App Screenshot](https://i.ibb.co/9qLfzS5/screencapture-sky-device-shop-web-app-home-2022-11-27-20-22-34.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Mobile device
+#### Home
+![App Screenshot](https://i.ibb.co/BKKvd6n/screencapture-sky-device-shop-web-app-home-2022-11-27-20-24-01.png)
 
-## Learn More
+## Installation
+- First, Download Or Clone the repository
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+  cd `repository`
+  npm install 
+  npm run start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Support
 
-### Code Splitting
+For support, email me mdemran.swe@gmail.com or visite my  [Website](https://emran-portfolio.web.app/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## Feedback
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+If you have any feedback, please reach out me to
+mdemran.swe@gmail.com
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://emran-portfolio.web.app/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/emran2k18/)
+[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/EmranSwe)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Contributing
 
-### Deployment
+Contributions are always welcome!
+For major changes, please open an issue first to discuss what you would like to change.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Please make sure to update tests as appropriate.
+See `CONTRIBUTING.md` for ways to get started follow me on github.
 
-### `npm run build` fails to minify
+Please adhere to this project's `code of conduct`.
+## Acknowledgements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I would like to express my special 
+thanks of gratitude to different technology relevent blog writter and stack overflow contributor and my instructor for their able guidance in completing my project.
+
+
+## Authors
+
+- [@Emran](https://github.com/EmranSWE)
+
+
+## License
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/) This project is licensed under the MIT License - see the `LICENSE.md `file for details
+
+
+
