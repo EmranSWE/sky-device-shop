@@ -22,7 +22,7 @@ Sky Device Shop:-
 | Back-End    | NodeJs, ExpressJs, MongoDb,cors, dotenv|
 | Tools |imgbb, Firebase, Heroku, Git |
 
-## Feature of EM Gimbal Website
+## Feature of Sky Device Shop.
 #### Sky Device Shop is a e-commarce functionality website.
 
 
